@@ -1,11 +1,11 @@
-// swift-tools-version:5.7
+// swift-tools-version:5.9
 
 import PackageDescription
 
 let package = Package(
     name: "WultraPassphraseMeter",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v12)
     ],
     products: [
         .library(name: "WultraPassphraseMeter", targets: ["WultraPassphraseMeter"]),
@@ -17,24 +17,25 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "WultraPassphraseMeter",
-            url: "https://github.com/wultra/passphrase-meter/releases/download/1.2.0/WultraPassphraseMeter-1.2.0.xcframework.zip",
-            checksum: "7c4aaa1f669aa254448e2aa461f5b2af653ce207dcef1b155dbfeb62a5855bc7"),
+            url: "https://github.com/Rool/passphrase-meter/tree/swift59/distribution/WultraPassphraseMeter.xcframework.zip",
+            checksum: "7a863f67ae548de280eb84ff087deaff9456931a03a618e630695f45620a308d"),
+		//  swift package compute-checksum WultraPassphraseMeter.xcframework.zip 
         .binaryTarget(
             name: "WultraPassphraseMeterCore",
-            url: "https://github.com/wultra/passphrase-meter/releases/download/1.2.0/WultraPassphraseMeterCore-1.2.0.xcframework.zip",
-            checksum: "113184771fae724761ce69493427b18a5d512f8dbc2a8f7676d16ebdbd40d26e"),
+            url: "https://github.com/Rool/passphrase-meter/tree/swift59/distribution/WultraPassphraseMeterCore.xcframework.zip",
+            checksum: "5b32bcf2d690f532e3bbc989dfeb27abde5ac3a8cbc910b703bfa235dd805a4e"),
         .binaryTarget(
             name: "WultraPassphraseMeterCZSKDictionary",
-            url: "https://github.com/wultra/passphrase-meter/releases/download/1.2.0/WultraPassphraseMeterCZSKDictionary-1.2.0.xcframework.zip",
-            checksum: "c408ee45322d1defe5818c15806683ba29c9e4e1cf423a35663596e65bf4fc6b"),
+            url: "https://github.com/Rool/passphrase-meter/tree/swift59/distribution/WultraPassphraseMeterCZSKDictionary.xcframework.zip",
+            checksum: "5f1d328557becb6d38048b883d32f650b881a8ee26c503f937a223bd6a746795"),
         .binaryTarget(
             name: "WultraPassphraseMeterENDictionary",
-            url: "https://github.com/wultra/passphrase-meter/releases/download/1.2.0/WultraPassphraseMeterENDictionary-1.2.0.xcframework.zip",
-            checksum: "d24cb28a116e5af136fbfa3b44c86f94d4dcbbe2d36081a56b01b78286cd3f01"),
+            url: "https://github.com/Rool/passphrase-meter/tree/swift59/distribution/WultraPassphraseMeterENDictionary.xcframework.zip",
+            checksum: "4d1735b2be139b009e025aa0edd86dd00c22e4e77896eef070bde592742a5e1c"),
         .binaryTarget(
             name: "WultraPassphraseMeterRODictionary",
-            url: "https://github.com/wultra/passphrase-meter/releases/download/1.2.0/WultraPassphraseMeterRODictionary-1.2.0.xcframework.zip",
-            checksum: "8d4d34db6ef441a0f199c4958b44d8ca736047366f3ec6fbc64bb661e631218a")
+            url: "https://github.com/Rool/passphrase-meter/tree/swift59/distribution/WultraPassphraseMeterRODictionary.xcframework.zip",
+            checksum: "5d32c024388b6378f4eb41b315b8a6ac06a7c25ab96153eb707c2f66588be0e0")
     ],
     swiftLanguageVersions: [.v5]
 )
